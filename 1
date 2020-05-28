@@ -1,0 +1,17 @@
+#include <stdio.h>
+int factorial (int n);
+main()
+{
+	int sayi, sonuc;
+	printf("faktoriyeli hesaplaancak sayi:");
+	scanf("%d,&sayi");
+	sonuc=factorial(sayi);
+	printf("%d sayisinin faktoriyeli %d dir.",sayi,sonuc);
+	
+}
+int factorial (int n) {
+
+if (n<=1) return 1;
+else 
+return n*factorial(n-1);
+}
